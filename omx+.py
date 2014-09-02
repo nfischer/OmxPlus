@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from gi.repository import Gtk, Gdk
-import cairo
+#import cairo
 import time
 import os
 
@@ -11,7 +11,7 @@ class FileChooserWindow(Gtk.Window):
         Gtk.Window.__init__(self, title="Omx+")
         self.set_name('MyWindow')
         self.set_size_request(400, 400)
-        icon_path = os.path.join(os.path.expanduser('~'), "Downloads", "eduke32.png")
+        icon_path = "eduke32.png"
         self.set_icon_from_file(icon_path)
 
         self.black_window = Gtk.Window(title="Black Window")
